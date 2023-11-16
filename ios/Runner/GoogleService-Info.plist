@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBeyAUdp1uEVU3Ms1DKd5DPuUGJtjBhV8A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>420291673101</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.weatherAppByFlutter</string>
+	<key>PROJECT_ID</key>
+	<string>weatherapp-8a9cb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>weatherapp-8a9cb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:420291673101:ios:6c524c41b41a4efbcd6944</string>
+</dict>
+</plist>
