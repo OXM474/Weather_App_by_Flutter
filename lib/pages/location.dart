@@ -18,7 +18,6 @@ class _LocationState extends State<Location> {
   @override
   void initState() {
     super.initState();
-    print(">>>>>>");
     getLocation();
   }
 
@@ -35,17 +34,10 @@ class _LocationState extends State<Location> {
     }
     var location = await Geolocator.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.low);
-    // setState(() {
-    //   currentLocation = location;
-    // });
     try {
-      print("-----");
-      getweatherbylocation(location!.latitude, location!.longitude)
+      getweatherbylocation(location.latitude, location.longitude)
           .then((value) => {weather = value});
-      print(weather!.timezone);
-
       iserror = false;
-      // setState(() {});
     } on Exception catch (err) {
       iserror = true;
       errmassage = err;
@@ -62,17 +54,17 @@ class _LocationState extends State<Location> {
         const SizedBox(
           height: 12,
         ),
-        Text("${weather!.timezone}")
-        // Header(data: weather!),
-        // CurrentWeather(data: weather!),
-        // const SizedBox(
-        //   height: 12,
-        // ),
-        // HoursWeather(data: weather!),
-        // const SizedBox(
-        //   height: 12,
-        // ),
-        // DailyWeather(data: weather!)
+        Text("${weather!.timezone}"),
+        Header(data: weather!),
+        CurrentWeather(data: weather!),
+        const SizedBox(
+          height: 12,
+        ),
+        HoursWeather(data: weather!),
+        const SizedBox(
+          height: 12,
+        ),
+        DailyWeather(data: weather!)
       ],
     );
   }
